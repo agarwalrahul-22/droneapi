@@ -1,16 +1,16 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const cors = require("cors");
+// const cors = require("cors");
 // import cors from "cors";
 // import mongoose from "mongoose";
 // import Users from "./models/Users.js";
 const app = express();
 app.use(express.json());
 app.use(express.urlencoded());
-app.use(cors());
+// app.use(cors());
 
 mongoose.connect(
-  "mongodb://localhost:27017/myLoginRegisterDB",
+  "mongodb+srv://rahul:1234@cluster0.mtpq4iv.mongodb.net/?retryWrites=true&w=majority",
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
