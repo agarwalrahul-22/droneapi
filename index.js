@@ -112,7 +112,7 @@ app.post("/user/accept", (req, res) => {
   const email = req.body.email;
   User.findOne({ email: email }, (err, user) => {
     if (user) {
-      user?.status = "Accepted"
+      user.status = "Accepted"
     } else {
     }
   });
@@ -121,7 +121,7 @@ app.post("/user/deny", (req, res) => {
   const email = req.body.email;
   User.findOne({ email: email }, (err, user) => {
     if (user) {
-      user?.status = "Denied"
+      user.status = "Denied"
     } else {
     }
   });
